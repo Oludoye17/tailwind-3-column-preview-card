@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+ .big-shoulders {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+</head>
+
+<body class="bg-white py-16 px-5 flex justify-center lg:items-center lg:h-screen ">
+  <main class="grid grid-cols-1 place-items-center lg:grid-cols-3 justify-center">
+    <section class="bg-[hsl(31,77%,52%)] p-8 rounded-t-md flex flex-col items-start h-[18rem] w-60 justify-between lg:rounded-t-none lg:rounded-l-md lg:h-[20rem]">
+      <img src="./images/icon-sedans.svg" alt="" class=" ">
+      <h2 class="text-white  big-shoulders">SEDANS</h>
+      <p class="text-white/70 text-[10px] font-medium lexend-deca pb-5 lg:pb-15">
+        Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.
+      </p>
+      <button class="bg-white text-yellow-700 rounded-2xl px-3 py-1.5 ">Learn more</button>
+    </section>
+
+    <section class="bg-[hsl(184,100%,22%)] p-8  flex flex-col items-start h-[18rem] w-60 justify-between lg:h-[20rem]">
+        <img src="./images/icon-suvs.svg" alt="" class="">
+        <h2 class="text-white big-shoulders ">
+        SUVS
+      </h2>
+      <p class="text-white/70 text-[10px] font-medium lexend-deca">
+        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.
+      </p>
+      <button class="bg-white rounded-2xl px-3 py-1.5">Learn more</button>
+    </section>
+
+    <section class="bg-[hsl(179,100%,13%)] p-8  flex flex-col items-start h-[18rem] w-60 justify-between rounded-b-md lg:rounded-bl-none lg:rounded-r-md lg:h-[20rem]">
+      <img src="./images/icon-luxury.svg" alt="" class="">
+      <h2 class="text-white big-shoulders">
+        LUXURY
+      </h2>
+      <p class="text-white/70 text-[10px] font-medium lexend-deca">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.
+      </p>
+      <button class="bg-white rounded-2xl px-3 py-1.5">Learn more</button>
+    </section>
+  </main>
+</body>
+</html>
